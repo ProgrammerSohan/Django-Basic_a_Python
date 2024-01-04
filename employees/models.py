@@ -12,4 +12,6 @@ class Employee(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.first_name
+       return self.first_name, self.last_name
+      # return f"{self.first_name} {self.last_name} {self.photo} { self.designation} {self.email_address} {self.phone_number} {self.created_at} {self.updated_at}"
+      # return f"{self.first_name} {self.last_name} | Photo: {self.photo.url} | Designation: {self.designation} | Email: {self.email_address} | Phone: {self.phone_number} | Created: {self.created_at} | Updated: {self.updated_at}"
